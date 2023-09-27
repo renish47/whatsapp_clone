@@ -238,6 +238,7 @@ const userSlice = createSlice({
       state: State,
       action: PayloadAction<UserInfo>
     ) => {
+      state.currentChatUserInfo = action.payload;
       if (state.currentChatUserInfo.id !== action.payload.id) {
         if (state.currentChatUserInfo.id !== "")
           state.socket.current.emit("out-chat", {
@@ -249,7 +250,6 @@ const userSlice = createSlice({
           to: action.payload.id,
         });
       }
-      state.currentChatUserInfo = action.payload;
     },
 
     filterFriendsList: (state: State, action: PayloadAction<string>) => {
@@ -270,11 +270,11 @@ const userSlice = createSlice({
       state.onlineUsers = action.payload;
     },
     resetCurrentUserInfo: (state: State) => {
+      state.currentChatUserInfo = initialState.currentChatUserInfo;
       state.socket.current.emit("out-chat", {
         from: state.userInfo.id,
         to: state.currentChatUserInfo.id,
       });
-      state.currentChatUserInfo = initialState.currentChatUserInfo;
     },
   },
 

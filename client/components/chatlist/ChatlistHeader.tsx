@@ -1,6 +1,5 @@
 "use client";
 import { FC, MouseEventHandler, useState } from "react";
-import Image from "next/image";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { resetCurrentUserInfo, selectUser } from "@/redux/features/userSlice";
 import { BsFillChatLeftTextFill, BsThreeDotsVertical } from "react-icons/bs";

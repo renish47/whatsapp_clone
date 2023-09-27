@@ -1,23 +1,14 @@
 "use client";
 import { selectUser } from "@/redux/features/userSlice";
 import { useAppSelector } from "@/redux/hooks";
-import { calculateTime } from "@/utils/calculateTime";
-import { FC, useEffect, useState } from "react";
-import MessageStatus from "./MessageStatus";
+import { FC } from "react";
 import ImageMessage from "./ImageMessage";
 import TextMessage from "./TextMessage";
 
 interface ChatContainerProps {}
 
 const ChatContainer: FC<ChatContainerProps> = ({}) => {
-  const {
-    currentChatUserInfo,
-    messages,
-    userInfo,
-    onlineUsers,
-    usersInYourChat,
-  } = useAppSelector(selectUser);
-  const [status, setStatus] = useState("sent");
+  const { currentChatUserInfo, messages } = useAppSelector(selectUser);
 
   return (
     <section className=" relative  h-[80vh] w-full flex-grow overflow-auto ">

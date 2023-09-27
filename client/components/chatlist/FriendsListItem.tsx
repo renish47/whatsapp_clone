@@ -6,7 +6,7 @@ import {
 } from "@/redux/features/userSlice";
 import { FC } from "react";
 import Image from "next/image";
-import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { useAppDispatch } from "@/redux/hooks";
 import {
   ToggleOpenChatPage,
   ToggleOpenContactPage,

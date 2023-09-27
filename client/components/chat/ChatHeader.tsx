@@ -4,7 +4,6 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import Image from "next/image";
 import { FC } from "react";
 import { IoIosArrowBack } from "react-icons/io";
-import { BsThreeDotsVertical } from "react-icons/bs";
 import IconWrapper from "../Common/IconWrapper";
 import createImageUrl from "@/utils/createImageUrl";
 import { ToggleOpenChatPage } from "@/redux/features/appSlice";

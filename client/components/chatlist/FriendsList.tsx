@@ -1,5 +1,5 @@
 "use client";
-import { ToggleOpenContactPage, selectApp } from "@/redux/features/appSlice";
+import { ToggleOpenContactPage } from "@/redux/features/appSlice";
 import { filterFriendsList, selectUser } from "@/redux/features/userSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { FC, useState } from "react";

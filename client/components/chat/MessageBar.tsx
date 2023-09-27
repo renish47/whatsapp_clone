@@ -7,7 +7,7 @@ import {
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { ADD_MESSAGE_ROUTE, GET_SIGNATURE_ROUTE } from "@/utils/apiRoutes";
 import axios from "axios";
-import EmojiPicker from "emoji-picker-react";
+import EmojiPicker, { EmojiStyle, Theme } from "emoji-picker-react";
 import { FC, useEffect, useRef, useState } from "react";
 import { BsEmojiSmile } from "react-icons/bs";
 import { RiImageAddLine } from "react-icons/ri";
@@ -187,10 +187,10 @@ const MessageBar: FC<MessageBarProps> = ({}) => {
           >
             <EmojiPicker
               onEmojiClick={emojiClickHandler}
-              theme="dark"
+              theme={Theme.DARK}
               height={400}
               width={400}
-              emojiStyle={"native"}
+              emojiStyle={EmojiStyle.NATIVE}
               emojiVersion={"2.0"}
             />
           </div>
@@ -224,20 +224,6 @@ const MessageBar: FC<MessageBarProps> = ({}) => {
           placeholder={`Type a message`}
           className="min-h-10 custom-scrollbar max-h-28 w-full resize-none overflow-y-auto rounded-lg bg-input  px-2 py-3 text-sm text-white focus:outline-none md:px-5"
         />
-
-        {/* <input
-          type="text"
-          autoFocus
-          placeholder="Type a message"
-          onChange={(e) => setMessage(e.target.value)}
-          onKeyDown={(e) =>
-            e.key === "Enter" &&
-            e.currentTarget.value !== "" &&
-            sendMessageHandler()
-          }
-          value={message}
-          className="h-10 w-full rounded-lg bg-input px-2 py-4 text-sm text-white focus:outline-none md:px-5 "
-        /> */}
       </div>
       <div className="flex w-10 items-center justify-center">
         <IconWrapper

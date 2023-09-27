@@ -32,6 +32,14 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   height: 5px !important;
   width: 5px;

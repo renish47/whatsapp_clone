@@ -6,7 +6,7 @@ import List from "./List";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { selectApp } from "@/redux/features/appSlice";
 import FriendsList from "./FriendsList";
-import { filterMessageList, selectUser } from "@/redux/features/userSlice";
+import { filterMessageList } from "@/redux/features/userSlice";
 import { cn } from "@/utils/utils";
 import { ClassValue } from "clsx";
 

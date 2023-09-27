@@ -10,8 +10,9 @@ const NavLogo: FC<NavLogoProps> = ({}) => {
         priority
         width="50"
         height="50"
-        src="/assets/WhatsAppLogoColor.png"
+        src="https://res.cloudinary.com/dcbkjtgon/image/upload/v1695828589/whatsappLogoColord_olkxtu.png"
         alt="whatsapp-logo"
+        quality={100}
         className="max-sm:h-10 max-sm:w-10"
       />
       <span className=" text-2xl font-semibold text-white sm:text-3xl">
