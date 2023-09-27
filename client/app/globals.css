@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.BgGradient {
+  background: rgb(7, 68, 54);
+  background: radial-gradient(
+    circle,
+    rgba(7, 68, 54, 1) 0%,
+    rgba(17, 27, 33, 1) 72%
+  );
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(0 0 0 /0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 5px !important;
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ffffff22;
+  border-radius: 50px;
+}
+
+/* Animation for entering */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for leaving */
+@keyframes slideOutToTop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Apply the animations to your notification element */
+.animate-enter {
+  animation: slideInFromTop 0.3s ease-in-out forwards;
+}
+
+.animate-leave {
+  animation: slideOutToTop 0.3s ease-in-out forwards;
+}
