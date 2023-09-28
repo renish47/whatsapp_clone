@@ -1,6 +1,6 @@
 # WhatsApp Clone - Realtime Messaging App
 
-![WhatsApp Clone](https://link.to.your.app/screenshot.png)
+![WhatsApp Clone](https://res.cloudinary.com/dcbkjtgon/image/upload/v1695908185/Screenshot_2023-09-26_125916_lhfpd2.jpg)
 
 This is a realtime messaging app designed to clone WhatsApp's design and functionality. It allows users to communicate in real-time using text and image messages. The app is built using a modern tech stack, including Next.js, React, Tailwind CSS, Socket.io, TypeScript, Redux, Axios for the frontend, and Node.js, Express, Prisma, PostgreSQL for the backend. Cloudinary is used to store images sent in the app and user profile pictures. Authentication is handled using Google's OAuth 2.0 through Next-Auth.
 
@@ -12,12 +12,10 @@ This is a realtime messaging app designed to clone WhatsApp's design and functio
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Demo
 
-You can access a live demo of the application at [https://your-app-url.com](https://your-app-url.com).
+You can access a live demo of the application at [https://clonewhatsapp.vercel.app](https://clonewhatsapp.vercel.app/).
 
 ## Tech Stack
 
