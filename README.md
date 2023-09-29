@@ -122,3 +122,12 @@ To run this application locally, follow these steps:
 
 3. Access the application at `http://localhost:3000`.
 
+
+
+### Todos
+
+1. Add sending and managing friend requests to users as of now a user can start conversation with any users who have created an account in this app
+2. Load message on need basis (This will helps to reduce load time of messages)
+3. Add sending voice message functionality 
+
+
