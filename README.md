@@ -97,8 +97,8 @@ To run this application locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/whatsapp-clone.git
-   cd whatsapp-clone
+   git clone https://github.com/renish47/whatsapp_clone.git
+   cd whatsapp_clone
    ```
 
 2. Install the dependencies for both the client and server:
