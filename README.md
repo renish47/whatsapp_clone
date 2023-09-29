@@ -17,6 +17,8 @@ This is a realtime messaging app designed to clone WhatsApp's design and functio
 
 You can access a live demo of the application at [https://clonewhatsapp.vercel.app](https://clonewhatsapp.vercel.app/).
 
+Note: Since the server side of the code is hosted in a free server hosting site, real-time functionalities aren't working properly since they'll spin down the server with inactivity. But check out this app's complete functionality by loading the server side code locally. 
+
 ## Tech Stack
 
 - **Frontend:**
