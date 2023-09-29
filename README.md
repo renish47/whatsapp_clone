@@ -12,6 +12,7 @@ This is a realtime messaging app designed to clone WhatsApp's design and functio
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
+- [Todos](#todos)
 
 ## Demo
 
@@ -124,7 +125,7 @@ To run this application locally, follow these steps:
 
 
 
-### Todos
+### Todos 
 
 1. Add sending and managing friend requests to users as of now a user can start conversation with any users who have created an account in this app
 2. Load message on need basis (This will helps to reduce load time of messages)
