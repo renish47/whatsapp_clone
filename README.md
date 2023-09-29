@@ -50,19 +50,43 @@ You can access a live demo of the application at [https://clonewhatsapp.vercel.a
 3. **Chatting:**
    - Users can find all registered users in the friends page.
    - They can select a user to start a chat with.
+     
+
+https://github.com/renish47/whatsapp_clone/assets/107568859/bad1ca7c-65e6-4139-9434-7242af2b612e
+
 
 4. **Search Functionality:**
    - A search bar is provided to search for users by their name.
+     
+5. **Notification:**
+   - In mobile view, users receive notifications for incoming messages while actively chatting with someone.
 
-5. **Message Types:**
+     
+
+https://github.com/renish47/whatsapp_clone/assets/107568859/e8b1bc75-18c9-4c77-93be-6da8e0831de5
+
+
+
+6. **Message Types:**
    - Users can send both text and image messages.
 
-6. **Message Status:**
+7. **Message Status:**
    - Each message shows three types of statuses: sending, sent, delivered, and read, similar to WhatsApp's ticks (single tick, double tick, blue tick).
 
-7. **Responsiveness:**
+     
+
+https://github.com/renish47/whatsapp_clone/assets/107568859/9f3a22a3-33d5-4bfb-9024-3a5f597a4df9
+
+
+
+8. **Responsiveness:**
    - The app is fully responsive, providing a great user experience on both large and small screens.
-   - In mobile view, users receive notifications for incoming messages while actively chatting with someone.
+
+     
+
+https://github.com/renish47/whatsapp_clone/assets/107568859/64137ccb-d3e6-4382-9a57-f2d2e10282b5
+
+
 
 ## Getting Started
 
