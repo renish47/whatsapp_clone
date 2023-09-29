@@ -52,7 +52,7 @@ const ContextMenu: FC<ContextMenuProps> = ({
         {options.map(({ name, callBack }) => (
           <li
             key={name}
-            className=" cursor-pointer px-5 py-2 text-base hover:bg-dropdown-hover "
+            className=" cursor-pointer px-5 py-2 text-base hover:bg-dropdown-hover max-sm:text-lg "
             onClick={(e) => handleClick(callBack)}
           >
             {name}
