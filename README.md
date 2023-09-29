@@ -52,7 +52,8 @@ You can access a live demo of the application at [https://clonewhatsapp.vercel.a
    - They can select a user to start a chat with.
      
 
-https://github.com/renish47/whatsapp_clone/assets/107568859/bad1ca7c-65e6-4139-9434-7242af2b612e
+
+https://github.com/renish47/whatsapp_clone/assets/107568859/f25d3f90-7d11-4648-8f17-34a0e25559e7
 
 
 4. **Search Functionality:**
@@ -61,9 +62,8 @@ https://github.com/renish47/whatsapp_clone/assets/107568859/bad1ca7c-65e6-4139-9
 5. **Notification:**
    - In mobile view, users receive notifications for incoming messages while actively chatting with someone.
 
-     
 
-https://github.com/renish47/whatsapp_clone/assets/107568859/e8b1bc75-18c9-4c77-93be-6da8e0831de5
+https://github.com/renish47/whatsapp_clone/assets/107568859/3ea1122b-b845-4bec-84bb-1b70ac7f975c
 
 
 
@@ -75,7 +75,7 @@ https://github.com/renish47/whatsapp_clone/assets/107568859/e8b1bc75-18c9-4c77-9
 
      
 
-https://github.com/renish47/whatsapp_clone/assets/107568859/9f3a22a3-33d5-4bfb-9024-3a5f597a4df9
+https://github.com/renish47/whatsapp_clone/assets/107568859/82afe4f1-3472-40bf-bf2e-40ec918751ab
 
 
 
@@ -84,7 +84,7 @@ https://github.com/renish47/whatsapp_clone/assets/107568859/9f3a22a3-33d5-4bfb-9
 
      
 
-https://github.com/renish47/whatsapp_clone/assets/107568859/64137ccb-d3e6-4382-9a57-f2d2e10282b5
+https://github.com/renish47/whatsapp_clone/assets/107568859/0bdb9556-0cb3-49c5-9624-34cfc4bbf5a6
 
 
 
