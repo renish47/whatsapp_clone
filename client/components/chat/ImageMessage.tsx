@@ -39,7 +39,7 @@ const ImageMessage: FC<ImageMessageProps> = ({ message, friendId }) => {
             alt="asset"
             height={300}
             width={300}
-            className={` max-w-[300px]  rounded-lg  ${
+            className={` max-w-[180px] rounded-lg xs:max-w-[220px]  md:max-w-[280px] lg:max-w-[300px]  ${
               message.messageStatus === "sending" ? "opacity-60 blur-sm" : ""
             }`}
           />

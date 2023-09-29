@@ -238,7 +238,6 @@ const userSlice = createSlice({
       state: State,
       action: PayloadAction<UserInfo>
     ) => {
-      state.currentChatUserInfo = action.payload;
       if (state.currentChatUserInfo.id !== action.payload.id) {
         if (state.currentChatUserInfo.id !== "")
           state.socket.current.emit("out-chat", {
@@ -250,6 +249,14 @@ const userSlice = createSlice({
           to: action.payload.id,
         });
       }
+      window.localStorage.setItem("currentChatUser", action.payload.id);
+      state.currentChatUserInfo = action.payload;
+    },
+    setCurrentChatUserInfo: (state: State, action: PayloadAction<string>) => {
+      let friendData = state.ungroupedFriendsList.filter(
+        (contact) => contact.id === action.payload
+      )[0];
+      if (friendData) state.currentChatUserInfo = friendData;
     },
 
     filterFriendsList: (state: State, action: PayloadAction<string>) => {
@@ -270,11 +277,12 @@ const userSlice = createSlice({
       state.onlineUsers = action.payload;
     },
     resetCurrentUserInfo: (state: State) => {
-      state.currentChatUserInfo = initialState.currentChatUserInfo;
       state.socket.current.emit("out-chat", {
         from: state.userInfo.id,
         to: state.currentChatUserInfo.id,
       });
+      window.localStorage.setItem("currentChatUser", "");
+      state.currentChatUserInfo = initialState.currentChatUserInfo;
     },
   },
 
@@ -351,6 +359,7 @@ export const {
   resetCurrentUserInfo,
   addUsersInYourChat,
   updateUsersInYourChat,
+  setCurrentChatUserInfo,
 } = userSlice.actions;
 
 export const selectUser = (state: RootState) => state.user;

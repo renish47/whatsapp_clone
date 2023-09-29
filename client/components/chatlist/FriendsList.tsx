@@ -32,7 +32,7 @@ const ContactList: FC<ContactListProps> = ({}) => {
         placeholder="Search Friends"
         searchFunction={searchFunctionHandler}
       />
-      <div className="custom-scrollbar overflow-auto ">
+      <div className="custom-scrollbar overflow-auto pb-16">
         {filteredFriendsList.length && searchInFocus ? (
           filteredFriendsList.map((contact) => (
             <FriendsListItem data={contact} key={contact.id} />

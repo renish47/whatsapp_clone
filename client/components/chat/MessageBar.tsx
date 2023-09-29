@@ -182,14 +182,13 @@ const MessageBar: FC<MessageBarProps> = ({}) => {
         </IconWrapper>
         {showEmojiPicker && (
           <div
-            className="absolute bottom-[105%] left-1 z-[100]"
+            className="absolute bottom-[105%] left-1 z-[100] w-fit sm:w-[400px]"
             ref={emojiPickerRef}
           >
             <EmojiPicker
               onEmojiClick={emojiClickHandler}
               theme={Theme.DARK}
               height={400}
-              width={400}
               emojiStyle={EmojiStyle.NATIVE}
               emojiVersion={"2.0"}
             />

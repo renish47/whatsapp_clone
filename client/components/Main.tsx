@@ -12,7 +12,9 @@ import {
   fetchMessageList,
   fetchMessages,
   fetchUserInfo,
+  resetMessage,
   selectUser,
+  setCurrentChatUserInfo,
   setOnlineUsers,
   updateUsersInYourChat,
 } from "@/redux/features/userSlice";
@@ -22,7 +24,7 @@ import { io } from "socket.io-client";
 import { HOST } from "@/utils/apiRoutes";
 import MainLoading from "./Common/MainLoading";
 import Profile from "./Profile";
-import { selectApp } from "@/redux/features/appSlice";
+import { ToggleOpenChatPage, selectApp } from "@/redux/features/appSlice";
 import toast from "react-hot-toast";
 import Notification from "./Notification";
 
@@ -37,7 +39,7 @@ const Main: FC<MainProps> = ({}) => {
     userInfo: { id: userId },
     isMessageListLoading,
     messageList,
-    messageListIds,
+    ungroupedFriendsList,
   } = useAppSelector(selectUser);
 
   const { openProfilePage, openChatPage, showEmptyPage, OpenContactPage } =
@@ -58,8 +60,22 @@ const Main: FC<MainProps> = ({}) => {
       socket.current = io(HOST);
       socket.current.emit("add-user", userId);
       dispatch(addSocket(socket));
+      let friendId = window.localStorage.getItem("currentChatUser");
+      if (friendId && friendId !== "") {
+        dispatch(setCurrentChatUserInfo(friendId));
+        dispatch(resetMessage(friendId));
+      }
     }
   }, [userId]);
+
+  useEffect(() => {
+    let friendId = window.localStorage.getItem("currentChatUser");
+    if (friendId && friendId !== "" && ungroupedFriendsList.length) {
+      dispatch(setCurrentChatUserInfo(friendId));
+      dispatch(resetMessage(friendId));
+      dispatch(ToggleOpenChatPage(true));
+    }
+  }, [ungroupedFriendsList.length]);
 
   useEffect(() => {
     if (userId !== "" && friendId !== "") {
