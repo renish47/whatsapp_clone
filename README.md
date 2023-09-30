@@ -1,7 +1,7 @@
 # WhatsApp Clone - Realtime Messaging App
 
+![Screenshot 2023-09-30 190113](https://github.com/renish47/whatsapp_clone/assets/107568859/ba2cc5cb-e486-4929-9a9a-ff6d98e34a06)
 
-![Screenshot 2023-09-29 221437](https://github.com/renish47/whatsapp_clone/assets/107568859/e8b8e13b-0e1a-4a51-9903-47436224e143)
 
 This is a realtime messaging app designed to clone WhatsApp's design and functionality. It allows users to communicate in real-time using text and image messages. The app is built using a modern tech stack, including Next.js, React, Tailwind CSS, Socket.io, TypeScript, Redux, Axios for the frontend, and Node.js, Express, Prisma, PostgreSQL for the backend. Cloudinary is used to store images sent in the app and user profile pictures. Authentication is handled using Google's OAuth 2.0 through Next-Auth.
 
